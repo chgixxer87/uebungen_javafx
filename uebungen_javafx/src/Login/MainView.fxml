@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="190.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.0" minWidth="10.0" prefWidth="242.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="463.0" minWidth="10.0" prefWidth="463.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextField fx:id="enterUNr" prefHeight="25.0" prefWidth="310.0" />
+      <Label text="U Nr eingeben" GridPane.columnIndex="2" />
+      <Label text="Passwort eingeben" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label fx:id="message" prefHeight="49.0" prefWidth="529.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <PasswordField fx:id="enterPW" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#checkPW" text="Einloggen" GridPane.rowIndex="2" />
+      <Button fx:id="exit" mnemonicParsing="false" onAction="#closeProgram" text="Schliessen" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
