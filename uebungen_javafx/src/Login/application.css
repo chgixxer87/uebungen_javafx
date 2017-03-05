@@ -1,1 +1,48 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*wenn ein element mit CSS bearbeitet werden soll, muss im controller das element mit dem scene builder*/
+ /*verknüpft werden mit @FXML und im Scene builder die id dafür ausgewählt werden, danach kann man mittels der
+  * id im css gestylt werden
+  */
+ 
+#login {
+	-fx-font-size: 30px;
+	/*javafx.scene.layout -> index auf API schauen (RGA), im Internet RGBA suchen der gewünschten Farbe */
+	-fx-background-color: rgba(255,255,255,.80);
+	-fx-text-fill: blue;
+	
+	/*? */
+	-fx-padding: 6 6 6 6;
+	-fx-border-radius: 8;
+	-fx-font-weight: bold;
+	}
+	
+	/*mit .label werden ALLE labels gleich gestylet. wenn nur ein einziges label, dann mit #id */
+.label {
+		
+	/*javafx.scene.layout -> index auf API schauen (RGA), im Internet RGBA suchen der gewünschten Farbe 
+	 * http://www.december.com/html/spec/colorrgbadec.html*/
+	-fx-background-color: rgba(255,255,255,.80);
+	-fx-text-fill: #1e90ff; /*codierung von javaFX css reference guide...kann auch als blue angegeben werden */
+	-fx-font-weight: bold;
+}
+
+#message {
+	-fx-background-color: rgba(0,255,255, 0.2);
+	-fx-text-fill: red;
+	-fx-font-weight: bold;
+}
+
+/*style von der ganzen scene (root angeben) */
+.root {
+	-fx-background-color: gray;
+}
+	
+	/*stylesheet in den scenebuilder ziehen:
+	 * im scenebuilder: preview - scene stylesheets - add...
+	 */
+	 
+	 /*reference guide für javaFX css: https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html */
+
+
+	
+	

@@ -23,7 +23,7 @@
       <Label text="Passwort eingeben" GridPane.columnIndex="2" GridPane.rowIndex="1" />
       <Label fx:id="message" prefHeight="49.0" prefWidth="529.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
       <PasswordField fx:id="enterPW" GridPane.rowIndex="1" />
-      <Button mnemonicParsing="false" onAction="#checkPW" text="Einloggen" GridPane.rowIndex="2" />
+      <Button fx:id="login" mnemonicParsing="false" onAction="#checkPW" text="Einloggen" GridPane.rowIndex="2" />
       <Button fx:id="exit" mnemonicParsing="false" onAction="#closeProgram" text="Schliessen" GridPane.columnIndex="2" GridPane.rowIndex="2" />
    </children>
 </GridPane>

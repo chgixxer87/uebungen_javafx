@@ -21,6 +21,8 @@ import javafx.scene.control.TextField;
 		
 		@FXML
 		private Button exit;
+		@FXML
+		private Button login;
 		
 		private String correctPW = "chgixxer87$$";
 		private String UNr;
